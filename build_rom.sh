@@ -9,7 +9,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 #patch -p1 < *.patch
 #cd ../..
 
-# build rom
+# build rom 
 source build/envsetup.sh
 lunch statix_RMX1941-userdebug  
 brunch statix_RMX1941-userdebug 
