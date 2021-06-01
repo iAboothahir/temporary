@@ -11,7 +11,7 @@ cd ../..
 
 # build rom
 source build/envsetup.sh
-lunch aosp_RMX1941-userdebug 
+lunch aosp_RMX1941-userdebug  
 m aex
 
 # upload rom
