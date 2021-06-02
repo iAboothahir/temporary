@@ -7,7 +7,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 cd external/selinux
 curl -LO https://github.com/PixelExperience/external_selinux/commit/9d6ebe89430ffe0aeeb156f572b2a810f9dc98cc.patch
 patch -p1 < *.patch
-cd ../..
+cd ../.. 
 
 # build rom 
 source build/envsetup.sh
