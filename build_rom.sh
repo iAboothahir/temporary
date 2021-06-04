@@ -1,12 +1,11 @@
 # sync rom
 repo init --depth=1 --no-repo-verify -u git://github.com/PixelExtended/manifest.git -b eleven -g default,-device,-mips,-darwin,-notdefault
-git clone https://github.com/cArN4gEisDeD/local_manifest.git --depth 1 -b pe .repo/local_manifests
+git clone https://github.com/cArN4gEisDeD/local_manifest.git --depth 1 -b pex .repo/local_manifests
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8 || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
 # build rom
 source build/envsetup.sh
 lunch aosp_RMX1941-userdebug
-export TZ=Asia/Dhaka #put before last build command
 mka bacon
 
 # upload rom (if you don't need to upload multiple files, then you don't need to edit next line)
